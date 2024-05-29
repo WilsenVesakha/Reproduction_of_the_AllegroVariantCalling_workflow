@@ -1,0 +1,61 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: seqs/B36_2014_S6_L001_R1_001.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.10
+Cutadapt version: 2.6
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Illumina adapter for trimming (count: 4). Second best hit was Nextera (count: 0)
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 7 bp
+Minimum required sequence length before a sequence gets removed: 15 bp
+All Read 1 sequences will be trimmed by 40 bp from their 5' end to avoid poor qualities or biases
+Output file will be GZIP compressed
+
+
+This is cutadapt 2.6 with Python 3.7.16
+Command line parameters: -j 1 -e 0.1 -q 20 -O 7 -a AGATCGGAAGAGC seqs/B36_2014_S6_L001_R1_001.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 0.47 s (32 us/read; 1.90 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  15,030
+Reads with adapters:                         6 (0.0%)
+Reads written (passing filters):        15,030 (100.0%)
+
+Total basepairs processed:     2,008,071 bp
+Quality-trimmed:                   6,263 bp (0.3%)
+Total written (filtered):      2,001,714 bp (99.7%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 6 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 0.0%
+  C: 33.3%
+  G: 33.3%
+  T: 33.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	2	0.0	1	1 1
+14	1	0.0	1	1
+15	1	0.0	1	1
+18	1	0.0	1	1
+25	1	0.0	1	1
+
+RUN STATISTICS FOR INPUT FILE: seqs/B36_2014_S6_L001_R1_001.fastq.gz
+=============================================
+15030 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 15 bp:	289 (1.9%)
+
